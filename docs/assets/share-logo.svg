@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 76" role="img" aria-label="SHARE Lab mark">
+<defs><linearGradient id="g" x1="0" x2="1" y1="1" y2="0"><stop stop-color="#0d518b"/><stop offset="1" stop-color="#53b9e8"/></linearGradient></defs>
+<rect width="76" height="76" rx="18" fill="#102b49"/>
+<path d="M13 48L30 25L45 48L63 24" fill="none" stroke="url(#g)" stroke-width="5.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M13 57H63" stroke="#a7d7eb" stroke-width="3" stroke-linecap="round"/>
+<path d="M30 25V57M45 48V57" stroke="#a7d7eb" stroke-width="2" stroke-opacity=".72"/>
+<circle cx="30" cy="25" r="4" fill="#a9edff"/><circle cx="63" cy="24" r="4" fill="#a9edff"/>
+</svg>

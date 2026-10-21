@@ -1,0 +1,54 @@
+---
+title: "Contact"
+page-layout: full
+title-block-banner: false
+---
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap nav-inner">
+  <a class="identity" href="index.html" aria-label="SHARE Lab home">
+  <span class="brand-title">SHARE<span class="brand-lab"> Lab.</span></span>
+  <span class="brand-subtitle">DANKOOK UNIVERSITY</span>
+</a>
+
+  <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="top-nav" aria-label="Toggle navigation">☰</button>
+  <nav class="top-nav" id="top-nav" aria-label="Main navigation">
+<a href="index.html" >Home</a><a href="people.html" >People</a><a href="research.html" >Research</a><a href="publications.html" >Publications</a><a href="news.html" >News</a><a href="contact.html" class="active" aria-current="page">Contact</a>  </nav>
+</div></header>
+<main id="main"><div class="wrap">
+  <div class="page-head">
+    <div class="eyebrow">SHARE LAB / CONTACT</div>
+    <h1>Contact</h1>
+    <p>Connect with SHARE Lab at Dankook University.</p>
+  </div>
+  <section class="content-section contact-section" aria-label="Laboratory contact information">
+    <div class="contact-box">
+      <div class="small-label">FIND US</div>
+      <h2>SHARE Lab</h2>
+      <p class="contact-department">Department of Civil and Environmental Engineering<br>Dankook University</p>
+      <div class="contact-details">
+        <div class="contact-item">
+          <div class="small-label">OFFICE</div>
+          <p>Engineering Building II, Room 214<br>Dankook University, Yongin, Republic of Korea</p>
+        </div>
+        <div class="contact-item">
+          <div class="small-label">EMAIL</div>
+          <a href="mailto:wjung@dankook.ac.kr">wjung@dankook.ac.kr</a>
+        </div>
+        <div class="contact-item">
+          <div class="small-label">PHONE</div>
+          <a href="tel:+823180053483">031-8005-3483</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div></main>
+<footer class="site-footer"><div class="wrap footer-inner">
+  <div><a class="identity" href="index.html" aria-label="SHARE Lab home">
+  <span class="brand-title">SHARE<span class="brand-lab"> Lab.</span></span>
+  <span class="brand-subtitle">DANKOOK UNIVERSITY</span>
+</a>
+<p class="footer-note">Systems and Hazards Analysis for Resilience to Extremes<br>Advancing Infrastructure Resilience through System–Hazard Interaction Analysis and Uncertainty Quantification</p></div>
+  <div class="footer-right"><strong>Department of Civil and Environmental Engineering</strong><br>Dankook University<br>Engineering Building II, Room 214, Dankook University, Yongin, Republic of Korea<br><a href="mailto:wjung@dankook.ac.kr">wjung@dankook.ac.kr</a><br><a href="tel:+823180053483">031-8005-3483</a></div>
+</div><div class="wrap footer-bottom"><span>© SHARE Lab · Dankook University</span><span>Designed for research, built for resilience.</span></div></footer>
+<script src="assets/site.js" defer></script>

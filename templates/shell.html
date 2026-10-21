@@ -1,0 +1,20 @@
+{% macro identity() %}
+<a class="identity" href="index.html" aria-label="SHARE Lab home">
+  <span class="brand-title">SHARE<span class="brand-lab"> Lab.</span></span>
+  <span class="brand-subtitle">DANKOOK UNIVERSITY</span>
+</a>
+{% endmacro %}
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap nav-inner">
+  {{ identity() }}
+  <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="top-nav" aria-label="Toggle navigation">☰</button>
+  <nav class="top-nav" id="top-nav" aria-label="Main navigation">
+    {% for item in menu %}<a href="{{item.url}}" {% if active == item.id %}class="active" aria-current="page"{% endif %}>{{item.title}}</a>{% endfor %}
+  </nav>
+</div></header>
+<main id="main">{{ page_body | safe }}</main>
+<footer class="site-footer"><div class="wrap footer-inner">
+  <div>{{ identity() }}<p class="footer-note">{{lab.full_name}}<br>{{lab.tagline}}</p></div>
+  <div class="footer-right"><strong>{{lab.department}}</strong><br>{{lab.university}}<br>{{lab.address}}{% if lab.email %}<br><a href="mailto:{{lab.email}}">{{lab.email}}</a>{% endif %}{% if lab.phone %}<br><a href="tel:+823180053483">{{lab.phone}}</a>{% endif %}</div>
+</div><div class="wrap footer-bottom"><span>© SHARE Lab · Dankook University</span><span>Designed for research, built for resilience.</span></div></footer>
+<script src="assets/site.js" defer></script>

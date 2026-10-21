@@ -1,0 +1,27 @@
+---
+title: "Research"
+page-layout: full
+title-block-banner: false
+---
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap nav-inner">
+  <a class="identity" href="index.html" aria-label="SHARE Lab home">
+  <span class="brand-title">SHARE<span class="brand-lab"> Lab.</span></span>
+  <span class="brand-subtitle">DANKOOK UNIVERSITY</span>
+</a>
+
+  <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="top-nav" aria-label="Toggle navigation">☰</button>
+  <nav class="top-nav" id="top-nav" aria-label="Main navigation">
+<a href="index.html" >Home</a><a href="people.html" >People</a><a href="research.html" class="active" aria-current="page">Research</a><a href="publications.html" >Publications</a><a href="news.html" >News</a><a href="contact.html" >Contact</a>  </nav>
+</div></header>
+<main id="main"><div class="wrap"><div class="page-head"><div class="eyebrow">SHARE LAB / RESEARCH</div><h1>Research</h1><p>Uncertainty quantification for understanding system–hazard interactions and advancing infrastructure resilience.</p></div><section class="content-section page-research" aria-label="Research areas"><article class="research-detail" id="uq"><div class="detail-img"><img src="assets/research-uq.webp" alt="Research image for Uncertainty Quantification" loading="lazy"></div><div class="detail-copy"><div class="small-label">01 / RESEARCH AREA</div><h2>Uncertainty Quantification</h2><p>Quantifying uncertainties in hazards, structural properties, numerical models, and system performance.</p><ul class="topic-list"><li>Probabilistic modeling and uncertainty propagation</li><li>Structural reliability and risk assessment</li><li>Surrogate modeling and data-driven simulation</li></ul></div></article><article class="research-detail" id="hazards"><div class="detail-img"><img src="assets/research-detail-hazards.webp" alt="Research image for Natural Hazards" loading="lazy"></div><div class="detail-copy"><div class="small-label">02 / RESEARCH AREA</div><h2>Natural Hazards</h2><p>Characterizing natural hazards and their interactions with buildings and infrastructure systems.</p><ul class="topic-list"><li>Extreme weather and multi-hazard processes</li><li>Hazard characterization and event analysis</li><li>Compound and cascading disaster scenarios</li></ul></div></article><article class="research-detail" id="wind"><div class="detail-img"><img src="assets/research-wind.webp" alt="Research image for Wind Engineering" loading="lazy"></div><div class="detail-copy"><div class="small-label">03 / RESEARCH AREA</div><h2>Wind Engineering</h2><p>Understanding extreme wind environments and wind-induced structural performance.</p><ul class="topic-list"><li>Downburst and non-synoptic winds</li><li>Wind loading and dynamic structural response</li><li>Wind hazard prediction and assessment</li></ul></div></article><article class="research-detail" id="structural"><div class="detail-img"><img src="assets/research-structural.webp" alt="Research image for Structural Engineering" loading="lazy"></div><div class="detail-copy"><div class="small-label">04 / RESEARCH AREA</div><h2>Structural Engineering</h2><p>Evaluating the behavior and safety of structural systems using mechanics and computational analysis.</p><ul class="topic-list"><li>Bridge and cable-supported structures</li><li>Nonlinear structural analysis</li><li>Performance and safety assessment</li></ul></div></article><article class="research-detail" id="resilience"><div class="detail-img"><img src="assets/research-detail-resilience.webp" alt="Research image for Infrastructure Resilience" loading="lazy"></div><div class="detail-copy"><div class="small-label">05 / RESEARCH AREA</div><h2>Infrastructure Resilience</h2><p>Assessing risk and resilience across interconnected infrastructure systems exposed to natural hazards.</p><ul class="topic-list"><li>System-level risk and vulnerability</li><li>Resilience-based performance assessment</li><li>Risk-informed decision support</li></ul></div></article></section></div></main>
+<footer class="site-footer"><div class="wrap footer-inner">
+  <div><a class="identity" href="index.html" aria-label="SHARE Lab home">
+  <span class="brand-title">SHARE<span class="brand-lab"> Lab.</span></span>
+  <span class="brand-subtitle">DANKOOK UNIVERSITY</span>
+</a>
+<p class="footer-note">Systems and Hazards Analysis for Resilience to Extremes<br>Advancing Infrastructure Resilience through System–Hazard Interaction Analysis and Uncertainty Quantification</p></div>
+  <div class="footer-right"><strong>Department of Civil and Environmental Engineering</strong><br>Dankook University<br>Engineering Building II, Room 214, Dankook University, Yongin, Republic of Korea<br><a href="mailto:wjung@dankook.ac.kr">wjung@dankook.ac.kr</a><br><a href="tel:+823180053483">031-8005-3483</a></div>
+</div><div class="wrap footer-bottom"><span>© SHARE Lab · Dankook University</span><span>Designed for research, built for resilience.</span></div></footer>
+<script src="assets/site.js" defer></script>

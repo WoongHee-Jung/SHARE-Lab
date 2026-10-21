@@ -1,0 +1,46 @@
+publications:
+- year: 2026
+  title: Validation of Hazard-Consistent Probabilistic Scenario Optimization for Updating Storm Surge Hazards in the Greater New Orleans Area, Louisiana
+  authors: WoongHee Jung, Alexandros A. Taflanidis, Norberto C. Nadal-Caraballo, Madison C. Yawn, Luke A. Aucoin
+  venue: Journal of Waterway, Port, Coastal, and Ocean Engineering
+  doi: 10.1061/JWPED5.WWENG-2345
+- year: 2025
+  title: 'Advances in spatiotemporal storm surge emulation: database imputation and multi-mode latent space projection'
+  authors: WoongHee Jung, Alexandros A. Taflanidis, Norberto C. Nadal-Caraballo, Luke A. Aucoin, Madison C. Yawn
+  venue: Coastal Engineering
+  doi: 10.1016/j.coastaleng.2025.104762
+- year: 2025
+  title: Advances in Imputation Strategies Supporting Peak Storm Surge Surrogate Modeling
+  authors: WoongHee Jung, Christopher Irwin, Alexandros A. Taflanidis, Norberto C. Nadal-Caraballo, Luke A. Aucoin, Madison C. Yawn
+  venue: Journal of Marine Science and Engineering
+  doi: 10.3390/jmse13091678
+- year: 2025
+  title: Adaptive formulation for probabilistic storm surge predictions through sharing of numerical simulation results across storm advisories
+  authors: WoongHee Jung, Alexandros A. Taflanidis
+  venue: Coastal Engineering
+  doi: 10.1016/j.coastaleng.2024.104618
+- year: 2024
+  title: Hazard-consistent scenario selection for long-term storm surge risk assessment over extended coastal regions
+  authors: WoongHee Jung, Alexandros A. Taflanidis, Norberto C. Nadal-Caraballo, Madison C. Yawn, Luke A. Aucoin
+  venue: Coastal Engineering
+  doi: 10.1016/j.coastaleng.2024.104620
+- year: 2024
+  title: Adaptive multi-fidelity Monte Carlo for real-time probabilistic storm surge predictions
+  authors: WoongHee Jung, Alexandros A. Taflanidis, Aikaterini P. Kyprioti, Jize Zhang
+  venue: Reliability Engineering & System Safety
+  doi: 10.1016/j.ress.2024.109994
+- year: 2024
+  title: Regional storm surge hazard quantification using Gaussian process metamodeling techniques
+  authors: WoongHee Jung, Alexandros A. Taflanidis, Norberto C. Nadal-Caraballo, Madison C. Yawn, Luke A. Aucoin
+  venue: Natural Hazards
+  doi: 10.1007/s11069-023-06195-4
+- year: 2023
+  title: Efficient global sensitivity analysis for high-dimensional outputs combining data-driven probability models and dimensionality reduction
+  authors: WoongHee Jung, Alexandros A. Taflanidis
+  venue: Reliability Engineering & System Safety
+  doi: 10.1016/j.ress.2022.108805
+- year: 2023
+  title: Efficient probabilistic storm surge estimation through adaptive importance sampling across storm advisories
+  authors: WoongHee Jung, Alexandros A. Taflanidis
+  venue: Coastal Engineering
+  doi: 10.1016/j.coastaleng.2023.104287

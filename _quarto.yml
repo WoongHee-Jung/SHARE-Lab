@@ -1,0 +1,23 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - index.qmd
+    - people.qmd
+    - research.qmd
+    - publications.qmd
+    - news.qmd
+    - contact.qmd
+website:
+  title: "SHARE Lab"
+  description: "Systems and Hazards Analysis for Resilience to Extremes at Dankook University"
+  favicon: assets/favicon.svg
+  navbar: false
+  page-footer: false
+format:
+  html:
+    theme: cosmo
+    css: assets/styles.css
+    toc: false
+    page-layout: full
+    anchor-sections: false

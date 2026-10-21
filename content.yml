@@ -1,0 +1,83 @@
+lab:
+  name: SHARE Lab
+  full_name: Systems and Hazards Analysis for Resilience to Extremes
+  university: Dankook University
+  department: Department of Civil and Environmental Engineering
+  address: Engineering Building II, Room 214, Dankook University, Yongin, Republic
+    of Korea
+  tagline: Advancing Infrastructure Resilience through System–Hazard Interaction Analysis
+    and Uncertainty Quantification
+  short_intro: We investigate how natural hazards interact with structures and infrastructure
+    systems. Our work combines uncertainty quantification, hazard analysis, and structural
+    engineering to advance risk-informed decisions and infrastructure resilience.
+  about: SHARE Lab explores the behavior and performance of built infrastructure under
+    uncertain environmental loads and natural hazards. By integrating probabilistic
+    methods, computational modeling, and data-driven analysis, we aim to understand
+    risk and support more resilient infrastructure systems.
+  email: wjung@dankook.ac.kr
+  phone: 031-8005-3483
+professor:
+  name: WoongHee Jung
+  title: Professor
+  role: Professor
+  department: Department of Civil and Environmental Engineering
+  university: Dankook University
+  interests: Uncertainty Quantification · Wind Engineering · Natural Hazards · Infrastructure
+    Resilience
+  photo: ''
+  cv_url: ''
+  scholar_url: https://scholar.google.com/citations?user=pqIQHbcAAAAJ&hl=en
+  personal_url: ''
+research:
+- slug: uq
+  title: Uncertainty Quantification
+  kicker: Research Area 01
+  summary: Quantifying uncertainties in hazards, structural properties, numerical
+    models, and system performance.
+  topics:
+  - Probabilistic modeling and uncertainty propagation
+  - Structural reliability and risk assessment
+  - Surrogate modeling and data-driven simulation
+- slug: hazards
+  title: Natural Hazards
+  kicker: Research Area 02
+  summary: Characterizing natural hazards and their interactions with buildings and
+    infrastructure systems.
+  topics:
+  - Extreme weather and multi-hazard processes
+  - Hazard characterization and event analysis
+  - Compound and cascading disaster scenarios
+  detail_image: research-detail-hazards.webp
+- slug: wind
+  title: Wind Engineering
+  kicker: Research Area 03
+  summary: Understanding extreme wind environments and wind-induced structural performance.
+  topics:
+  - Downburst and non-synoptic winds
+  - Wind loading and dynamic structural response
+  - Wind hazard prediction and assessment
+- slug: structural
+  title: Structural Engineering
+  kicker: Research Area 04
+  summary: Evaluating the behavior and safety of structural systems using mechanics
+    and computational analysis.
+  topics:
+  - Bridge and cable-supported structures
+  - Nonlinear structural analysis
+  - Performance and safety assessment
+- slug: resilience
+  title: Infrastructure Resilience
+  kicker: Research Area 05
+  summary: Assessing risk and resilience across interconnected infrastructure systems
+    exposed to natural hazards.
+  topics:
+  - System-level risk and vulnerability
+  - Resilience-based performance assessment
+  - Risk-informed decision support
+  detail_image: research-detail-resilience.webp
+people:
+  graduate_students: []
+  undergraduate_researchers: []
+  alumni: []
+publications: []
+news: []
