@@ -1,0 +1,224 @@
+/*
+============================================================
+SHARE Lab — EASY THEME SETTINGS
+GitHub > assets > theme.css 에서 아래 값만 바꾸면 됩니다.
+색상은 #RRGGBB 형태, 크기는 px 또는 rem 단위로 입력합니다.
+수정 후 Commit changes → GitHub Actions 자동 배포
+============================================================
+*/
+
+:root {
+  /* [01] 기본 색상 */
+  --theme-background: #FFFFFF;       /* 웹사이트 전체 배경 */
+  --theme-card-background: #FFFFFF;  /* 카드/박스 배경 */
+  --theme-heading: #153758;          /* 큰 제목, 교수 이름 */
+  --theme-body-text: #172C3C;        /* 기본 본문 */
+  --theme-description: #687988;      /* 작은 설명 문구 */
+  --theme-accent: #206A9E;           /* 강조 텍스트/링크 */
+  --theme-border: #E6EBEF;           /* 경계선 */
+  --theme-soft-background: #F7F9FA; /* 이미지/약한 바탕 */
+
+  /* [02] 상단 메뉴 */
+  --theme-nav-text: #536676;
+  --theme-nav-active: #155B8B;
+
+  /* [03] 버튼 */
+  --theme-button-background: #164C7B;
+  --theme-button-hover: #0D365B;
+  --theme-button-text: #FFFFFF;
+  --theme-button-radius: 6px;        /* 0px = 각진 버튼, 20px = 둥근 버튼 */
+
+  /* [04] 글씨체: 기본 DM Sans / 제목 Manrope */
+  --theme-body-font: 'DM Sans', Arial, sans-serif;
+  --theme-heading-font: 'Manrope', Arial, sans-serif;
+
+  /* [05] 글씨 크기 */
+  --theme-body-size: 16px;
+  --theme-nav-size: 14px;
+  --theme-hero-size: clamp(2.55rem, 4.05vw, 4.45rem);
+  --theme-hero-mobile-size: clamp(2.4rem, 10vw, 3.6rem);
+  --theme-page-title-size: clamp(2.9rem, 5vw, 4.6rem);
+  --theme-section-title-size: clamp(1.9rem, 3.1vw, 3rem);
+  --theme-card-title-size: 1.14rem;
+
+  /* [06] 카드 모서리 및 전체 너비 */
+  --theme-card-radius: 12px;
+  --theme-page-max-width: 1240px;
+}
+
+/* ============================================================
+   아래부터는 설정값을 홈페이지에 적용하는 코드입니다.
+   위 [01]~[06] 부분만 수정하면 됩니다.
+   ============================================================ */
+
+:root {
+  --navy: var(--theme-heading);
+  --blue: var(--theme-accent);
+  --ink: var(--theme-body-text);
+  --muted: var(--theme-description);
+  --line: var(--theme-border);
+  --soft: var(--theme-soft-background);
+  --max: var(--theme-page-max-width);
+}
+
+html,
+body {
+  background-color: var(--theme-background);
+}
+
+html {
+  font-size: var(--theme-body-size);
+}
+
+body {
+  color: var(--theme-body-text);
+  font-family: var(--theme-body-font);
+  font-size: 1rem;
+}
+
+h1, h2, h3, .brand-title {
+  font-family: var(--theme-heading-font);
+  color: var(--theme-heading);
+}
+
+h2 {
+  font-size: var(--theme-section-title-size);
+}
+
+a:hover, .link-arrow, .pub-actions a,
+.people-more a, .contact-item a {
+  color: var(--theme-accent);
+}
+
+.site-header,
+.site-footer {
+  background-color: var(--theme-background);
+  border-color: var(--theme-border);
+}
+
+.brand-title, .page-head h1,
+.people-section-label, .person-info h3,
+.research-info h3, .half-panel h2,
+.detail-copy h2, .contact-box h2,
+.publication-card h3, .footer-right strong,
+.teaser-pub strong {
+  color: var(--theme-heading);
+}
+
+.brand-lab,
+.hero h1 span, .intro-grid h2 span,
+.pub-year h2, .hero-art-caption span {
+  color: var(--theme-accent);
+}
+
+.hero h1 {
+  font-size: var(--theme-hero-size);
+  color: var(--theme-heading);
+}
+
+.page-head h1 {
+  font-size: var(--theme-page-title-size);
+}
+
+.eyebrow, .small-label, .hero .eyebrow {
+  color: var(--theme-accent);
+}
+
+.eyebrow-rule, .top-nav a.active::after {
+  background-color: var(--theme-accent);
+}
+
+.top-nav a {
+  color: var(--theme-nav-text);
+  font-size: var(--theme-nav-size);
+}
+
+.top-nav a.active {
+  color: var(--theme-nav-active);
+}
+
+.hero-description,
+.intro-grid p, .research-info p,
+.detail-copy p, .page-head p,
+.person-info p, .person-meta,
+.pub-meta, .footer-note,
+.footer-right, .half-panel p,
+.simple-list p, .contact-department,
+.contact-item p, .placeholder,
+.topic-list, .research-thumb .caption {
+  color: var(--theme-description);
+}
+
+.hero-description strong {
+  color: var(--theme-heading);
+}
+
+.btn {
+  border-radius: var(--theme-button-radius);
+  font-family: var(--theme-body-font);
+}
+
+.btn-primary {
+  background-color: var(--theme-button-background);
+  border-color: var(--theme-button-background);
+  color: var(--theme-button-text);
+}
+
+.btn-primary:hover {
+  background-color: var(--theme-button-hover);
+  border-color: var(--theme-button-hover);
+  color: var(--theme-button-text);
+}
+
+.btn-outline {
+  background-color: var(--theme-card-background);
+  color: var(--theme-heading);
+  border-color: var(--theme-border);
+}
+
+.btn-outline:hover {
+  color: var(--theme-accent);
+  border-color: var(--theme-accent);
+}
+
+.research-card, .half-panel, .contact-section .contact-box,
+.people-panel, .status-panel {
+  background-color: var(--theme-card-background);
+  border-color: var(--theme-border);
+  border-radius: var(--theme-card-radius);
+}
+
+.research-info h3 {
+  font-size: var(--theme-card-title-size);
+}
+
+.research-thumb, .person-visual, .detail-img,
+.membership-hint, .menu-toggle {
+  background-color: var(--theme-soft-background);
+}
+
+.hero,
+.research-detail, .contact-item,
+.pub-year, .publication-card,
+.pub-intro, .footer-bottom {
+  border-color: var(--theme-border);
+}
+
+.word-tag {
+  border-color: var(--theme-border);
+  color: var(--theme-description);
+}
+
+@media (max-width: 690px) {
+  .hero h1 {
+    font-size: var(--theme-hero-mobile-size);
+  }
+
+  .top-nav {
+    background-color: var(--theme-background);
+  }
+
+  .top-nav a {
+    font-size: var(--theme-nav-size);
+  }
+}
