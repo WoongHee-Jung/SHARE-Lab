@@ -45,3 +45,36 @@
 
 /* prevent 43% + 57% + grid gap overflow on Research detail pages */
 @media(min-width:691px){.research-detail{grid-template-columns:minmax(0,43fr) minmax(0,57fr)}}
+
+/* SHARE Lab Custom Colors */
+
+/* People, Research 등 페이지 제목 */
+.page-head h1 {
+    color: #153758;
+}
+
+/* Home 페이지 메인 제목 */
+.hero h1 {
+    color: #153758;
+}
+
+/* 메인 제목 중 강조된 부분 */
+.hero h1 span {
+    color: #206A9E;
+}
+
+/* 교수 이름 및 연구분야 제목 */
+.person-info h3,
+.research-info h3 {
+    color: #153758;
+}
+
+/* 일반 본문 글씨 */
+body {
+    color: #172C3C;
+}
+
+/* 상단 메뉴 글씨 */
+.top-nav a {
+    color: #536676;
+}
