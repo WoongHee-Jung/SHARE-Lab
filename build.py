@@ -53,7 +53,7 @@ for page in ['home','people','research','publications','news','contact']:
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#ffffff">
 <title>{'SHARE Lab' if page=='home' else page.capitalize()+' | SHARE Lab'}</title>
 <meta name="description" content="SHARE Lab at Dankook University – Systems and Hazards Analysis for Resilience to Extremes.">
-<link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="stylesheet" href="assets/styles.css"><link rel="stylesheet" href="assets/theme.css"></head>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="stylesheet" href="assets/styles.css"></head>
 <body>{whole}</body></html>'''
     (DIST / f'{filename}.html').write_text(html,encoding='utf-8')
     # Quarto-compatible source for those who prefer managing a Quarto website.
