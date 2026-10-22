@@ -1,21 +1,195 @@
+{# ============================================================
+   SHARE Lab / Home Page
+   ------------------------------------------------------------
+   EDIT GUIDE (직접 수정할 때 참고)
+   1. 히어로 첫 화면        → [01] HERO
+   2. ABOUT THE LAB       → [02] ABOUT
+   3. Research Areas      → [03] RESEARCH
+   4. People 카드         → [04] PEOPLE
+   5. Publications 카드   → [05] PUBLICATIONS
+   6. News               → [06] NEWS
+
+   {{lab.about}}, {{professor.name}} 등은 content.yml에서 가져옵니다.
+   본문에 직접 입력한 제목/문구는 이 파일에서 바꾸면 됩니다.
+   간격/색상/폰트는 assets/styles.css에서 수정하세요.
+   ============================================================ #}
+
 <div class="wrap">
+
+  <!-- [01] HERO : 맨 위 연구실 소개 및 대표 이미지 -->
   <section class="hero" aria-labelledby="hero-title">
-    <div class="hero-copy"><div class="eyebrow"><span class="eyebrow-rule"></span> {{lab.full_name}}</div>
-      <h1 id="hero-title">Advancing<br><span>Infrastructure</span><br>Resilience.</h1>
-      <p class="hero-description">Through <strong>System–Hazard Interaction Analysis</strong><br> and <strong>Uncertainty Quantification</strong>.</p>
-      <div class="hero-actions"><a class="btn btn-primary" href="research.html">Research</a><a class="btn btn-outline" href="people.html">People</a></div>
+    <div class="hero-copy">
+      <div class="eyebrow">
+        <span class="eyebrow-rule"></span>
+        {{ lab.full_name }}
+      </div>
+
+      <h1 id="hero-title">
+        Advancing<br>
+        <span>Infrastructure</span><br>
+        Resilience.
+      </h1>
+
+      <p class="hero-description">
+        through <strong>System–Hazard Interaction Analysis</strong><br>
+        and <strong>Uncertainty Quantification</strong>.
+      </p>
+
+      <!-- 버튼에 화살표 없음 -->
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="research.html">Research</a>
+        <a class="btn btn-outline" href="people.html">People</a>
+      </div>
     </div>
+
     <div class="hero-visual hero-visual-illustration">
-      <img class="hero-art" src="assets/hero-illustration.webp"
-           alt="Pastel illustration of a tropical cyclone, rainfall, wildfire, a bridge, city buildings and connected infrastructure systems">
-      <div class="hero-art-caption">INFRASTRUCTURE <span>×</span> HAZARDS <span>×</span> UNCERTAINTY</div>
+      <img
+        class="hero-art"
+        src="assets/hero-illustration.webp"
+        alt="Illustration of natural hazards and interconnected infrastructure"
+      >
+      <div class="hero-art-caption">
+        INFRASTRUCTURE <span>×</span> HAZARDS <span>×</span> UNCERTAINTY
+      </div>
     </div>
   </section>
-  <section class="section intro-grid"><div><div class="eyebrow">ABOUT THE LAB</div><h2>Make resilient systems<br><span>considering uncertainties.</h2></div><div><p>{{lab.about}}</p><div class="word-tags"><span class="word-tag">Uncertainty Quantification</span><span class="word-tag">Natural Hazards</span><span class="word-tag">System Interactions</span><span class="word-tag">Risk & Resilience</span></div></div></section>
-  <section class="section research-home-section" aria-labelledby="home-research-title"><div class="half-panel research-home-panel"><div class="section-heading"><div><div class="eyebrow">OUR EXPERTISE</div><h2 id="home-research-title">Research Areas</h2></div><a class="link-arrow" href="research.html">Research</a></div>
-    <div class="research-grid">{% for item in research %}<a class="research-card" href="research.html#{{item.slug}}"><div class="research-thumb"><img src="assets/research-{{item.slug}}.webp" loading="lazy" alt="Research visualization for {{item.title}}"></div><div class="research-info"><div class="small-label">0{{loop.index}} / Research Area</div><h3>{{item.title}}</h3><p>{{item.summary}}</p></div></a>{% endfor %}</div>
-  </div></section>
-  <section class="section split-home" aria-label="The research group and publications"><div class="half-panel people-teaser"><div class="eyebrow">PEOPLE</div><h2>Our team<br>members</h2><p>Get to know the researchers exploring infrastructure, natural hazards, and uncertainty.</p><a class="link-arrow" href="people.html">People</a><div class="teaser-person"><span class="teaser-avatar">WJ</span><div><strong>{{professor.name}}</strong><small>{{professor.title}} · {{lab.university}}</small></div></div></div>
-  <div class="half-panel pub-teaser"><div class="eyebrow">PUBLICATIONS</div><h2>New ideas &<br>shared knowledge.</h2><p>Read our peer-reviewed research in uncertainty quantification, hazard assessment, and structural resilience.</p><a class="link-arrow" href="publications.html">Publications</a>{% for item in publications[:2] %}<div class="teaser-pub"><small>{{item.year}} / {{item.venue}}</small><strong>{{item.title}}</strong></div>{% endfor %}</div></section>
-  <section class="section latest-home"><div class="section-heading"><div><div class="eyebrow">SHARE LAB</div><h2>News & Updates</h2></div><a class="link-arrow" href="news.html">News</a></div>{% if news %}{% for item in news[:3] %}<div class="news-row"><span>{{item.date}}</span><strong>{{item.title}}</strong></div>{% endfor %}{% else %}<p class="placeholder">Research news and laboratory updates will appear here as the group grows.</p>{% endif %}</section>
+
+  <!-- [02] ABOUT : 큰 제목 + 오른쪽 연구실 설명 -->
+  <section class="section intro-grid" aria-labelledby="about-title">
+    <div class="about-copy">
+      <div class="eyebrow">ABOUT THE LAB</div>
+
+      <!--
+        아래 문구를 직접 수정하세요.
+        <span>으로 감싼 부분만 파란색으로 표시됩니다.
+        <br>은 줄바꿈이며, 좁은 화면에서는 자동으로 추가 줄바꿈됩니다.
+      -->
+      <h2 id="about-title" class="about-title">
+        Building <span>resilient systems</span><br>
+        under <span>uncertainty</span>.
+      </h2>
+    </div>
+
+    <div class="about-details">
+      <!-- 이 문장은 content.yml > lab > about 에서 수정 -->
+      <p>{{ lab.about }}</p>
+
+      <div class="word-tags" aria-label="Research keywords">
+        <span class="word-tag">Uncertainty Quantification</span>
+        <span class="word-tag">Natural Hazards</span>
+        <span class="word-tag">System Interactions</span>
+        <span class="word-tag">Risk &amp; Resilience</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- [03] RESEARCH AREAS : 연구분야 카드 목록 -->
+  <section
+    class="section research-home-section"
+    aria-labelledby="home-research-title"
+  >
+    <div class="half-panel research-home-panel">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">OUR EXPERTISE</div>
+          <h2 id="home-research-title">Research Areas</h2>
+        </div>
+        <a class="link-arrow" href="research.html">Research</a>
+      </div>
+
+      <div class="research-grid">
+        {% for item in research %}
+        <a class="research-card" href="research.html#{{ item.slug }}">
+          <div class="research-thumb">
+            <img
+              src="assets/research-{{ item.slug }}.webp"
+              loading="lazy"
+              alt="Illustration for {{ item.title }}"
+            >
+          </div>
+
+          <div class="research-info">
+            <div class="small-label">
+              {{ '%02d' | format(loop.index) }} / Research Area
+            </div>
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.summary }}</p>
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- [04] PEOPLE + [05] PUBLICATIONS : 같은 높이의 카드 -->
+  <section
+    class="section split-home"
+    aria-label="The research group and publications"
+  >
+    <!-- [04] PEOPLE 카드 -->
+    <div class="half-panel people-teaser">
+      <div class="eyebrow">PEOPLE</div>
+
+      <!-- 이 카드 제목도 여기서 바꿀 수 있습니다. -->
+      <h2>Our team members</h2>
+      <p>
+        Get to know the researchers exploring infrastructure,
+        natural hazards, and uncertainty.
+      </p>
+      <a class="link-arrow" href="people.html">People</a>
+
+      <div class="teaser-person">
+        <span class="teaser-avatar">WJ</span>
+        <div>
+          <!-- 이름, 직함, 대학: content.yml에서 수정 -->
+          <strong>{{ professor.name }}</strong>
+          <small>{{ professor.title }} · {{ lab.university }}</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- [05] PUBLICATIONS 카드 -->
+    <div class="half-panel pub-teaser">
+      <div class="eyebrow">PUBLICATIONS</div>
+      <h2>Shared knowledge</h2>
+      <p>
+        Read our peer-reviewed research in uncertainty quantification,
+        hazard assessment, and structural resilience.
+      </p>
+      <a class="link-arrow" href="publications.html">Publications</a>
+
+      <!-- 최신 논문 2편을 publications YAML 파일에서 불러옵니다. -->
+      {% for item in publications[:2] %}
+      <div class="teaser-pub">
+        <small>{{ item.year }} / {{ item.venue }}</small>
+        <strong>{{ item.title }}</strong>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- [06] NEWS : 연구실 소식이 없으면 기본 안내문 표시 -->
+  <section class="section latest-home" aria-labelledby="latest-home-title">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">SHARE LAB</div>
+        <h2 id="latest-home-title">News &amp; Updates</h2>
+      </div>
+      <a class="link-arrow" href="news.html">News</a>
+    </div>
+
+    {% if news %}
+      {% for item in news[:3] %}
+      <div class="news-row">
+        <span>{{ item.date }}</span>
+        <strong>{{ item.title }}</strong>
+      </div>
+      {% endfor %}
+    {% else %}
+      <p class="placeholder">
+        Research news and laboratory updates will appear here as the group grows.
+      </p>
+    {% endif %}
+  </section>
+
 </div>
