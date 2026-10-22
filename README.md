@@ -1,10 +1,7 @@
 # SHARE Lab 홈페이지 운영·관리 전체 안내서
 
-> **적용 기준:** SHARE Lab Home Version 8 / 통합 `assets/styles.css` 구조  
 > **대상:** 홈페이지를 GitHub Pages로 공개하고 GitHub 웹에서 직접 수정하는 관리자  
 > **홈페이지 구성:** Home · People · Research · Publications · News · Contact
-
-이 문서는 *버전별 변경 기록*이 아니라 **SHARE Lab 홈페이지를 처음 게시하는 방법부터 일상적인 수정·관리·문제 해결까지** 다루는 사용설명서입니다. 현재 GitHub 저장소에서 이미 수정한 사진·문구·주소 등이 있다면 **GitHub에 올라간 파일을 최신 원본으로** 생각하고, 과거 ZIP 파일 전체를 다시 업로드하지 마세요.
 
 ---
 
