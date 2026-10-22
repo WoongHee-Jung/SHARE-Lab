@@ -1,5 +1,6 @@
 # SHARE Lab 홈페이지 운영·관리 전체 안내서
 
+
 > **대상:** 홈페이지를 GitHub Pages로 공개하고 GitHub 웹에서 직접 수정하는 관리자  
 > **홈페이지 구성:** Home · People · Research · Publications · News · Contact
 
